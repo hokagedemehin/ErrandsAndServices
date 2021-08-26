@@ -21,19 +21,19 @@ const Header = () => {
         <div className=" hidden xxs:inline-flex flex-1 justify-center items-center mx-2 sm:space-x-3 md:space-x-8">
           <a
             href="#"
-            className="hover:bg-gray-200 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+            className="hover:bg-gray-200 active:bg-gray-400 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
           >
             Home
           </a>
           <a
             href="#"
-            className="hover:bg-gray-200 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+            className="hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
           >
             Service
           </a>
           <a
             href="#"
-            className="hover:bg-gray-200 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+            className="hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
           >
             People
           </a>
@@ -41,13 +41,13 @@ const Header = () => {
         <div className=" hidden xxs:inline-flex items-center space-x-2 ">
           <a
             href="#"
-            className="hover:bg-gray-200 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+            className="hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
           >
             Login
           </a>
           <a
             href="#"
-            className="px-4 py-1 border-2 rounded-full shadow-sm bg-sky-400 text-white  hover:shadow-md hover:bg-sky-600 transition duration-250"
+            className="px-4 py-1 border-2 rounded-full shadow-sm bg-sky-400 text-white  hover:shadow-md hover:bg-sky-600 active:bg-sky-500 transition duration-250"
           >
             Signup
           </a>
@@ -68,31 +68,31 @@ const Header = () => {
       >
         <a
           href="#"
-          className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
         >
           Home
         </a>
         <a
           href="#"
-          className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
         >
           Services
         </a>
         <a
           href="#"
-          className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
         >
           People
         </a>
         <a
           href="#"
-          className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
         >
           Login
         </a>
         <a
           href="#"
-          className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
         >
           Signup
         </a>
