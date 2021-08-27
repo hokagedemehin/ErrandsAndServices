@@ -109,7 +109,7 @@ const Header = () => {
         >
           {icon ? <MenuIcon className="h-6" /> : <XIcon className="h-6" />}
         </button>
-      </nav>
+      </div>
       <div
         id="mobile-menu"
         className={`${hide ? "hidden" : "block"} w-min xxs:hidden pb-2`}
