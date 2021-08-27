@@ -66,15 +66,15 @@ const Footer = () => {
                 <p>errands@gmail.com</p>
               </div>
             </div>
-            <div className={`flex flex-1 mb-2 xxs:mb-0`}>
-              <div className="lg:text-2xl relative">
+            <div className={`flex flex-1 justify-center mb-2 xxs:mb-0`}>
+              <div className="lg:text-2xl relative bg-white rounded-lg">
                 <Image
-                  src="/errands_fav.jpeg"
+                  src="/errands3.png"
                   // layout="fill"
 
-                  objectFit="contain"
-                  width="200"
-                  height="200"
+                  objectFit="cover"
+                  width="150"
+                  height="50"
                 />
                 {/* <p>Errands & Services</p> */}
               </div>
