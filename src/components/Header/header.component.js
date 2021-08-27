@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className={`shadow-md sticky top-0 z-50 bg-white`}>
       <div className=" max-w-6xl mx-auto px-5  text-gray-500 font-fam4 ">
-        <nav className="flex flex-row relative">
+        <nav className="flex flex-row">
           <div className=" relative cursor-pointer  flex items-center">
             <Image
               src="/errands_logo1.png"
@@ -63,7 +63,7 @@ const Header = () => {
             {icon ? <MenuIcon className="h-6" /> : <XIcon className="h-6" />}
           </button>
         </nav>
-        <div
+        {/* <div
           id="mobile-menu"
           className={`${
             hide ? "hidden" : "block"
@@ -99,20 +99,13 @@ const Header = () => {
           >
             Signup
           </a>
-        </div>
-        <button
-          onClick={() => {
-            setHide(!hide);
-            setIcon(!icon);
-          }}
-          className="xxs:hidden flex flex-1 items-center justify-end  border-0 border-transparent no-underline"
-        >
-          {icon ? <MenuIcon className="h-6" /> : <XIcon className="h-6" />}
-        </button>
+        </div> */}
       </div>
       <div
         id="mobile-menu"
-        className={`${hide ? "hidden" : "block"} w-min xxs:hidden pb-2`}
+        className={`${
+          hide ? "hidden" : "block"
+        } w-min xxs:hidden pb-2 font-fam4 pl-2`}
       >
         <a
           href="#"
