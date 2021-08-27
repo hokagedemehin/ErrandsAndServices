@@ -71,35 +71,90 @@ const Header = () => {
         >
           <a
             href="#"
-            className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+            className="hover:bg-gray-200 active:bg-gray-400 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+
           >
             Home
           </a>
           <a
             href="#"
-            className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+
+            className="hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+
           >
             Services
           </a>
           <a
             href="#"
-            className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+
+            className="hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+
           >
             People
           </a>
           <a
             href="#"
-            className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+
+            className="hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+
           >
             Login
           </a>
           <a
             href="#"
-            className="block py-2 px-2 text-lg hover:bg-gray-200 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+
+            className="px-4 py-1 border-2 rounded-full shadow-sm bg-sky-400 text-white  hover:shadow-md hover:bg-sky-600 active:bg-sky-500 transition duration-250"
+
           >
             Signup
           </a>
         </div>
+
+        <button
+          onClick={() => {
+            setHide(!hide);
+            setIcon(!icon);
+          }}
+          className="xxs:hidden flex flex-1 items-center justify-end  border-0 border-transparent no-underline"
+        >
+          {icon ? <MenuIcon className="h-6" /> : <XIcon className="h-6" />}
+        </button>
+      </nav>
+      <div
+        id="mobile-menu"
+        className={`${hide ? "hidden" : "block"} w-min xxs:hidden pb-2`}
+      >
+        <a
+          href="#"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+        >
+          Home
+        </a>
+        <a
+          href="#"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+        >
+          Services
+        </a>
+        <a
+          href="#"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+        >
+          People
+        </a>
+        <a
+          href="#"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+        >
+          Login
+        </a>
+        <a
+          href="#"
+          className="block py-2 px-2 text-lg hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out border border-transparent rounded-full text-center"
+        >
+          Signup
+        </a>
+
       </div>
     </header>
   );
