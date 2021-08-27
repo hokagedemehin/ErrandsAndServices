@@ -70,7 +70,8 @@ const Footer = () => {
               <div className="lg:text-2xl relative">
                 <Image
                   src="/errands_fav.jpeg"
-                  layout="fill"
+                  // layout="fill"
+
                   objectFit="contain"
                   width="200"
                   height="200"
