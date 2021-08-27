@@ -58,7 +58,9 @@ export const Hero = () => {
             <div className="m-1 sm:m-4">
               <button
                 onClick={() => alert("it works")}
+
                 className="bg-gradient-to-r from-blue-700 to-sky-500 py-1 active:bg-gradient-to-r active:from-blue-500 active:to-sky-300 xxs:py-2 px-3 xxs:px-4 font-bold xxs:font-extrabold text-sm xxs:text-lg md:text-2xl text-white rounded-full hover:scale-110 hover:shadow-lg transition duration-200 ease-in-out"
+
               >
                 View Services
               </button>

@@ -72,30 +72,39 @@ const Header = () => {
           <a
             href="#"
             className="hover:bg-gray-200 active:bg-gray-400 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+
           >
             Home
           </a>
           <a
             href="#"
+
             className="hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+
           >
             Services
           </a>
           <a
             href="#"
+
             className="hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+
           >
             People
           </a>
           <a
             href="#"
+
             className="hover:bg-gray-200 active:bg-gray-400 transition duration-500 ease-in-out text-lg px-4 py-1 border rounded-full border-transparent"
+
           >
             Login
           </a>
           <a
             href="#"
+
             className="px-4 py-1 border-2 rounded-full shadow-sm bg-sky-400 text-white  hover:shadow-md hover:bg-sky-600 active:bg-sky-500 transition duration-250"
+
           >
             Signup
           </a>
@@ -137,6 +146,7 @@ const Header = () => {
         >
           Signup
         </a>
+
       </div>
     </header>
   );
