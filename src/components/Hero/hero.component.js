@@ -4,6 +4,8 @@ import Typewriter from "typewriter-effect";
 import { CogIcon } from "@heroicons/react/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCog } from "@fortawesome/free-solid-svg-icons";
+import { FaBeer } from "react-icons/fa";
+
 export const Hero = () => {
   return (
     <>
@@ -56,12 +58,10 @@ export const Hero = () => {
             <div className="m-1 sm:m-4">
               <button
                 onClick={() => alert("it works")}
-                className="bg-gradient-to-r from-blue-700 to-sky-500 py-1 xxs:py-2 px-3 xxs:px-4 font-bold xxs:font-extrabold text-sm xxs:text-lg md:text-2xl text-white rounded-full hover:scale-110 hover:shadow-lg transition duration-200 ease-in-out"
+                className="bg-gradient-to-r from-blue-700 to-sky-500 py-1 xxs:py-2 lg:py-3 px-3 xxs:px-4 lg:px-6 font-bold xxs:font-extrabold text-sm xxs:text-lg md:text-2xl lg:text-4xl text-white rounded-full hover:scale-110 hover:shadow-lg transition duration-200 ease-in-out"
               >
                 View Services
-                {/* <FontAwesomeIcon icon={faUserCog} className="ml-2" /> */}
               </button>
-              {/* <CogIcon className="h-6 w-6" /> */}
             </div>
           </div>
         </div>
