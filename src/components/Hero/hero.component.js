@@ -20,7 +20,7 @@ export const Hero = () => {
           backgroundSize: "cover",
           // backgroundImage: `url("./errands_logo1.png")`,
           backgroundImage: `url("./hero/layered-waves-haikei3.svg"), 
-          url("./hero/blurry-gradient-haikei1.svg"), 
+          url("./hero/blurry-gradient-haikei1.svg") 
           `,
         }}
       >
