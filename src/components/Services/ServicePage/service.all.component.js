@@ -3,7 +3,7 @@ import { FaStore } from "react-icons/fa";
 import ServiceImageCard from "../service.image.card.component";
 
 const ServicesAll = () => {
-  // correct ted the naming error folder name
+  // correct ted the naming error folder name...
   const apiData = [
     {
       image: "/servicePage/listofServices/homeCleaner.png",
