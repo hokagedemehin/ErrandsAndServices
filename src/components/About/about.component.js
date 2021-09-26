@@ -9,13 +9,13 @@ export const About = () => {
        bg-no-repeat bg-center bg-cover `}
       style={{
         backgroundImage: `url("./about/blob-haikei3.svg")`,
-        aspectRatio: "900/540",
+        aspectRatio: "900/500",
       }}
     >
       <section>
         <h1
           className={`
-        font-fam5 font-black text-center text-3xl xxs:text-4xl sm:text-5xl md:text-6xl
+        font-fam5 font-black text-blue-800 text-center text-3xl xxs:text-4xl sm:text-5xl md:text-6xl
         my-4
         `}
         >
@@ -23,8 +23,8 @@ export const About = () => {
         </h1>
         <p
           className={`
-            font-fam1 font-medium text-justify text-lg lg:text-2xl
-            px-4
+            font-fam1 font-bold text-justify sm:text-lg lg:text-2xl
+            px-4 pb-2
         `}
         >
           This is Errands & Services, we are the platform where you can find
@@ -32,10 +32,10 @@ export const About = () => {
           kinds be it domestic services, electrical services, mechanical
           services and the likes.
         </p>
-        <br />
+
         <p
           className={`
-            font-fam1 font-medium text-justify text-lg lg:text-2xl
+            font-fam1 font-bold text-justify sm:text-lg lg:text-2xl
             px-4
         `}
         >

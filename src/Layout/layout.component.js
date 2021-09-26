@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header/header.component";
 import Head from "next/head";
 import Footer from "../components/Footer/footer.component";
+import NavHeader from "../components/Header/navheader.component";
+import { BackToTop } from "material-ui-back-to-top";
 
 export const Layout = ({ children, name, desc }) => {
   // console.log(window.innerHeight);
@@ -9,7 +11,7 @@ export const Layout = ({ children, name, desc }) => {
     <div className="">
       <Head>
         <title>Errands & Services - {name}</title>
-        <link rel="icon" href="/errands_fav.jpeg" />
+        <link rel="icon" href="/logo/errands_fav.jpeg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -17,9 +19,11 @@ export const Layout = ({ children, name, desc }) => {
           rel="stylesheet"
         />
       </Head>
-      <Header />
+      {/* <Header /> */}
+      <NavHeader />
       <main className="min-h-screen">{children}</main>
       <Footer />
+      <BackToTop size="small" />
     </div>
   );
 };

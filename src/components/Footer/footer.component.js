@@ -9,9 +9,22 @@ import {
 import { AiFillInstagram } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
 import Image from "next/image";
+import router from "next/router";
 // import { ImFacebook2 } from "react-icons/im";
 
+const navigation = [
+  { name: "Home", href: "/" },
+  { name: "Services", href: "/services" },
+  { name: "People", href: "/people" },
+  { name: "About", href: "/about" },
+];
+
 const Footer = () => {
+  const handleClick = (e, href) => {
+    e.preventDefault();
+    router.push(href);
+    console.log("router: ", router.pathname);
+  };
   return (
     <footer className={`flex flex-col mt-6 `}>
       <div className="">
@@ -37,12 +50,18 @@ const Footer = () => {
               />
             </div>
             <div
-              className={`flex flex-1 space-x-4 text-sm xxs:text-base text-gray-300 mb-4 xxs:mb-0 font-fam4 lg:text-xl `}
+              className={`flex flex-1 justify-center space-x-4 text-sm xxs:text-base text-gray-300 mb-4 xxs:mb-0 font-fam4 lg:text-xl mx-1 `}
             >
-              <a href="#">Home</a>
-              <a href="#">Services</a>
-              <a href="#">People</a>
-              <a href="#">Login</a>
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  aria-current={item.current ? "page" : undefined}
+                  onClick={(e) => handleClick(e, item.href)}
+                >
+                  {item.name}
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -69,7 +88,7 @@ const Footer = () => {
             <div className={`flex flex-1 justify-center mb-2 xxs:mb-0`}>
               <div className="lg:text-2xl relative bg-white rounded-lg">
                 <Image
-                  src="/errands3.png"
+                  src="/logo/errands3.png"
                   // layout="fill"
 
                   objectFit="cover"
