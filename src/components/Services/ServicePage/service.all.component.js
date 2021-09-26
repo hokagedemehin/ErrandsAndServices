@@ -5,32 +5,32 @@ import ServiceImageCard from "../service.image.card.component";
 const ServicesAll = () => {
   const apiData = [
     {
-      image: "/servicePage/listOfServices/homeCleaner.png",
+      image: "/servicePage/listofServices/homeCleaner.png",
       name: "Home Cleaning",
     },
-    { image: "/servicePage/listOfServices/cook.png", name: "Cook" },
+    { image: "/servicePage/listofServices/cook.png", name: "Cook" },
     {
-      image: "/servicePage/listOfServices/dispatchRider.png",
+      image: "/servicePage/listofServices/dispatchRider.png",
       name: "Dispatch Rider",
     },
     {
-      image: "/servicePage/listOfServices/marketShopper1.png",
+      image: "/servicePage/listofServices/marketShopper1.png",
       name: "Market Shopper",
     },
     {
-      image: "/servicePage/listOfServices/houseAgent.png",
+      image: "/servicePage/listofServices/houseAgent.png",
       name: "House Agent",
     },
     {
-      image: "/servicePage/listOfServices/ushers1.png",
+      image: "/servicePage/listofServices/ushers1.png",
       name: "Event Ushers",
     },
     {
-      image: "/servicePage/listOfServices/dryCleaner.png",
+      image: "/servicePage/listofServices/dryCleaner.png",
       name: "Dry Cleaner",
     },
     {
-      image: "/servicePage/listOfServices/security1.png",
+      image: "/servicePage/listofServices/security1.png",
       name: "Security Guard",
     },
   ];
