@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="flex flex-row">
           <div className=" relative cursor-pointer  flex items-center">
             <Image
-              src="/errands_logo1.png"
+              src="/logo/errands_logo1.png"
               alt="Errands and Services logo"
               // layout="fill"
               // objectFit="contain"
@@ -146,7 +146,6 @@ const Header = () => {
         >
           Signup
         </a>
-
       </div>
     </header>
   );

@@ -12,7 +12,8 @@ const ProfileSectionCard = () => {
             <Image
               layout="fill"
               objectFit="cover"
-              src="/profile/prof1.png"
+              src="https://avatars.dicebear.com/api/micah/random.svg?background=%23050749"
+              // src="/profile/prof1.png"
               alt=""
             />
           </div>
