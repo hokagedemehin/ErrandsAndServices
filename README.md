@@ -4,11 +4,10 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](
 
 It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
 
-## Preview
+ ![GitHub File Size](https://img.shields.io/github/languages/code-size/hokageDemehin/ErrandsAndServices)  ![GitHub Pull Request](https://img.shields.io/github/issues-pr-closed/hokageDemehin/ErrandsAndServices) [![Open Website](https://img.shields.io/website?up_message=online&url=https%3A%2F%2Ferrands-and-services.vercel.app)](https://errands-and-services.vercel.app/)
+## Contributing
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Contributions are welcome. Feel free to open a pull request with changes. 
 
 ## Deploy your own
 
