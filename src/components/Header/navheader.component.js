@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "Services", href: "/services", current: true },
-  { name: "People", href: "/people", current: false },
+  { name: "People", href: "/profiles", current: false },
   { name: "About", href: "/about", current: false },
 ];
 
@@ -23,7 +23,7 @@ export default function NavHeader() {
   const handleClick = (e, href) => {
     e.preventDefault();
     router.push(href);
-    console.log("router: ", router.pathname);
+    // console.log("router: ", router.pathname);
   };
 
   // const currentRoute = useHistory().location.pathname.toLowerCase();
@@ -49,13 +49,13 @@ export default function NavHeader() {
                   <img
                     className="block lg:hidden h-14 w-auto"
                     // src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                    src="/errands10.png"
+                    src="/logo/errands10.png"
                     alt="Workflow"
                   />
                   <img
                     className="hidden lg:block h-16 w-auto"
                     // src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                    src="/errands10.png"
+                    src="/logo/errands10.png"
                     alt="Workflow"
                   />
                 </div>

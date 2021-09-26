@@ -11,7 +11,7 @@ export const Layout = ({ children, name, desc }) => {
     <div className="">
       <Head>
         <title>Errands & Services - {name}</title>
-        <link rel="icon" href="/errands_fav.jpeg" />
+        <link rel="icon" href="/logo/errands_fav.jpeg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link

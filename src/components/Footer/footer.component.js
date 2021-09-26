@@ -88,7 +88,7 @@ const Footer = () => {
             <div className={`flex flex-1 justify-center mb-2 xxs:mb-0`}>
               <div className="lg:text-2xl relative bg-white rounded-lg">
                 <Image
-                  src="/errands3.png"
+                  src="/logo/errands3.png"
                   // layout="fill"
 
                   objectFit="cover"
