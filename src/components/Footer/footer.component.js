@@ -6,10 +6,12 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { GrInstagram } from "react-icons/gr";
+// import { AiFillInstagram } from "react-icons/ai";
+// import { GrInstagram } from "react-icons/gr";
 import Image from "next/image";
-import router from "next/router";
+// import router from "next/router";
+import { useRouter } from "next/router";
+
 // import { ImFacebook2 } from "react-icons/im";
 
 const navigation = [
@@ -20,10 +22,11 @@ const navigation = [
 ];
 
 const Footer = () => {
+  const router = useRouter();
   const handleClick = (e, href) => {
     e.preventDefault();
     router.push(href);
-    console.log("router: ", router.pathname);
+    // console.log("router: ", router.pathname);
   };
   return (
     <footer className={`flex flex-col mt-6 `}>
@@ -33,21 +36,31 @@ const Footer = () => {
             className={`flex flex-col justify-center items-center  text-white xxs:flex-row max-w-6xl mx-auto`}
           >
             <div className={`flex flex-1 p-3 flex-row space-x-4  lg:m-2 `}>
-              <FaFacebook
-                className={`text-[#4267B2] text-xl xxs:text-2xl lg:text-4xl `}
-              />
-              <FaTwitter
-                className={`text-[#00acee] text-xl xxs:text-2xl lg:text-4xl `}
-              />
-              <FaInstagram
-                className={` bg-gradient-to-b from-[#8a3ab9] via-[#fbad50] to-[#cd486b]  text-xl xxs:text-2xl lg:text-4xl rounded-lg`}
-              />
-              <FaLinkedin
-                className={`text-[#0077b5] text-xl xxs:text-2xl lg:text-4xl `}
-              />
-              <FaWhatsapp
-                className={`bg-[#25d366] rounded-lg text-xl xxs:text-2xl lg:text-4xl `}
-              />
+              <a href="!#">
+                <FaFacebook
+                  className={`text-[#4267B2] text-xl xxs:text-xl lg:text-3xl `}
+                />
+              </a>
+              <a href="!#">
+                <FaTwitter
+                  className={`text-[#00acee] text-xl xxs:text-xl lg:text-3xl `}
+                />
+              </a>
+              <a href="!#">
+                <FaInstagram
+                  className={` bg-gradient-to-b from-[#8a3ab9] via-[#fbad50] to-[#cd486b]  text-xl xxs:text-xl lg:text-3xl rounded-lg`}
+                />
+              </a>
+              <a href="!#">
+                <FaLinkedin
+                  className={`text-[#0077b5] text-xl xxs:text-xl lg:text-3xl `}
+                />
+              </a>
+              <a href="!#">
+                <FaWhatsapp
+                  className={`bg-[#25d366] rounded-lg text-xl xxs:text-xl lg:text-3xl `}
+                />
+              </a>
             </div>
             <div
               className={`flex flex-1 justify-center space-x-4 text-sm xxs:text-base text-gray-300 mb-4 xxs:mb-0 font-fam4 lg:text-xl mx-1 `}
@@ -56,7 +69,9 @@ const Footer = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  aria-current={item.current ? "page" : undefined}
+                  aria-current={
+                    router.pathname === item.href ? "page" : undefined
+                  }
                   onClick={(e) => handleClick(e, item.href)}
                 >
                   {item.name}

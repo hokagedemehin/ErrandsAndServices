@@ -72,7 +72,9 @@ export default function NavHeader() {
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
                           "px-3 py-2 rounded-md text-md font-medium cursor-pointer transition duration-500 ease-in-out"
                         )}
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={
+                          router.pathname === item.href ? "page" : undefined
+                        }
                         onClick={(e) => handleClick(e, item.href)}
                       >
                         {item.name}
@@ -180,7 +182,9 @@ export default function NavHeader() {
                         : "text-gray-300 hover:bg-gray-700 hover:text-white",
                       "block px-3 py-2 rounded-md text-base font-medium "
                     )}
-                    aria-current={item.current ? "page" : undefined}
+                    aria-current={
+                      router.pathname === item.href ? "page" : undefined
+                    }
                     onClick={(e) => handleClick(e, item.href)}
                   >
                     {item.name}
