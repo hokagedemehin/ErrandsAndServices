@@ -4,6 +4,7 @@ import Head from "next/head";
 import Footer from "../components/Footer/footer.component";
 import NavHeader from "../components/Header/navheader.component";
 import { BackToTop } from "material-ui-back-to-top";
+import FooterNav from "../components/Footer/foot.component";
 
 export const Layout = ({ children, name, desc }) => {
   // console.log(window.innerHeight);
@@ -22,7 +23,8 @@ export const Layout = ({ children, name, desc }) => {
       {/* <Header /> */}
       <NavHeader />
       <main className="min-h-screen">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
+      <FooterNav />
       <BackToTop size="small" />
     </div>
   );

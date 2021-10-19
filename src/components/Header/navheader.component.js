@@ -84,16 +84,25 @@ export default function NavHeader() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
+                {/* <button
                   type="button"
                   className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white transition duration-300 ease-in-out"
                 >
                   <span className="sr-only">View notifications</span>
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
+                </button> */}
 
+                <a
+                  href="#_"
+                  className="ml-2 relative inline-flex items-center justify-start px-4 py-2 overflow-hidden font-medium transition-all bg-white rounded-lg hover:bg-white group"
+                >
+                  <span className="w-48 h-48 rounded-lg rotate-[-40deg] bg-blue-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                  <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+                    Join Us
+                  </span>
+                </a>
                 {/* Profile dropdown */}
-                <Menu as="div" className="ml-3 relative">
+                {/* <Menu as="div" className="ml-3 relative">
                   <div>
                     <Menu.Button className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
@@ -155,7 +164,7 @@ export default function NavHeader() {
                       </Menu.Item>
                     </Menu.Items>
                   </Transition>
-                </Menu>
+                </Menu> */}
               </div>
             </div>
           </div>
